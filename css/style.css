@@ -758,7 +758,7 @@ fieldset:disabled a.btn {
 
 .portofolio_section .box .img-box img {
     width: 100%;
-    border: 5px solid rgb(1, 179, 255);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 50%;
 }
 
