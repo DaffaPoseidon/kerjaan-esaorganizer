@@ -222,7 +222,7 @@ fieldset:disabled a.btn {
 }
 
 #mainNav .navbar-brand {
-    color: #000000;
+    color: #64a19d;
     font-weight: 700;
     padding: 0.9rem 0;
     font-size: 1.2rem;
@@ -238,6 +238,10 @@ fieldset:disabled a.btn {
 #mainNav .navbar-nav .nav-item:focus {
     outline: none;
     background-color: transparent;
+}
+
+#mainNav .nav-link:hover {
+    color: #64a19d;
 }
 
 @media (min-width: 992px) {
@@ -258,7 +262,8 @@ fieldset:disabled a.btn {
         color: rgba(255, 255, 255, 0.5);
     }
     #mainNav .nav-link:hover {
-        color: rgba(255, 255, 255, 0.75);
+        color: #ffffff;
+        font-weight: 1000;
     }
     #mainNav .nav-link:active {
         color: #fff;
@@ -469,7 +474,23 @@ fieldset:disabled a.btn {
     border-radius: 100%;
 }
 
-.do_section .do_container .box .img-box img {
+.do_section .do_container .box .title-box {
+    text-align: center;
+    margin: 20px 0;
+    align-items: center;
+    max-width: 120px;
+}
+
+.do_section .do_container .box .title-box a h6 {
+    color: #000000;
+    font-weight: 400;
+}
+
+.do_section .do_container .box .title-box a h6:hover {
+    color: #ffc107;
+}
+
+.do_section .do_container .box .img-box a img {
     width: 45px;
 }
 
