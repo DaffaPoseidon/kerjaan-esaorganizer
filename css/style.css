@@ -798,6 +798,10 @@ fieldset:disabled a.btn {
     z-index: 2;
 }
 
+.blog_section .detail-box .heading_container {
+    align-items: center;
+}
+
 .blog_section .blog_container {
     position: relative;
     max-width: 1500px;
