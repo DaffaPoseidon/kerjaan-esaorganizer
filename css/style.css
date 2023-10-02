@@ -39,6 +39,7 @@ body {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    text-align: center;
 }
 
 .heading_container h2 {
@@ -470,8 +471,9 @@ fieldset:disabled a.btn {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #353434;
+    background-color: #fff;
     border-radius: 100%;
+    border: 4px solid;
 }
 
 .do_section .do_container .box .title-box {
@@ -594,7 +596,7 @@ fieldset:disabled a.btn {
 }
 
 .client_section {
-    padding-bottom: 150px;
+    padding: 150px 0;
 }
 
 .client_section .heading_container {
@@ -737,10 +739,138 @@ fieldset:disabled a.btn {
 .target_section h5 {
     font-size: 18px;
     font-weight: 500;
+    margin: 0 2em;
 }
 
 
 /* End of target section */
+
+
+/* start of cooperate section */
+
+.section-padding {
+    padding: 80px 0px;
+}
+
+#cooperation-heading {
+    text-align: center;
+    align-items: center;
+}
+
+.single-feature {
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+.single-feature h5 {
+    font-size: 1.5rem;
+}
+
+.media-right-margin {
+    margin-right: 25px;
+}
+
+.single-feature p {
+    font-size: 1rem;
+}
+
+.icon-border span {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    color: rgb(142, 30, 252);
+    font-size: 1.5rem;
+    line-height: 50px;
+    border: 1px solid rgb(142, 30, 252);
+}
+
+
+/* end of cooperate section */
+
+
+/* Visi-Misi section */
+
+.blog_section .detail-box {
+    margin: 35px auto;
+    position: relative;
+    z-index: 2;
+}
+
+.blog_section .blog_container {
+    position: relative;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.blog_section .blog_container .blog_bg {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    margin-left: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.blog_section .blog_container .blog_bg img {
+    width: 100%;
+}
+
+.blog_section .blog_box {
+    width: 80%;
+    margin: auto;
+}
+
+.blog_section .box {
+    margin-top: 55px;
+    background-color: #ffffff;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.blog_section .box.b1 {
+    margin-top: 100%;
+}
+
+.blog_section .box .img-box {
+    position: relative;
+}
+
+.blog_section .box .img-box img {
+    width: 100%;
+}
+
+.blog_section .box .blog-detail {
+    padding: 25px 25px 15px;
+}
+
+.blog_section .box .blog-detail .blog_post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.blog_section .box .blog-detail .blog_post h6 {
+    color: #c2bebe;
+}
+
+.blog_section .box .blog-detail h5 {
+    color: #031003;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.blog_section .box .blog-detail p {
+    color: #404040;
+}
+
+
+/* End of Visi-Misi section */
 
 
 /* Portofolio section */
@@ -870,72 +1000,7 @@ fieldset:disabled a.btn {
 /* End of portofolio section */
 
 
-/* contact section */
-
-.contact_section .heading_container {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.contact_section .contact-form {
-    padding: 25px;
-    border-radius: 20px;
-}
-
-.contact_section .contact-form input {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    width: 100%;
-    margin: 15px 0;
-    padding: 10px 20px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 30px;
-}
-
-.contact_section .contact-form input.input_message {
-    height: 175px;
-}
-
-.contact_section .contact-form input::-webkit-input-placeholder {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.contact_section .contact-form input:-ms-input-placeholder {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.contact_section .contact-form input::-ms-input-placeholder {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.contact_section .contact-form input::placeholder {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.contact_section .contact-form button {
-    border: none;
-    outline: none;
-    padding: 12px 50px;
-    text-transform: uppercase;
-    margin-top: 25px;
-    background-color: #fec913;
-    color: #fff;
-    border-radius: 30px;
-}
-
-.contact_section .map_img-box {
-    width: 80%;
-    margin: 25px auto 0 auto;
-}
-
-.contact_section .map_img-box img {
-    width: 100%;
-}
-
-
-/* end contact section */
+/* start of info section */
 
 .info_section {
     background-color: #232323;
@@ -1037,6 +1102,9 @@ fieldset:disabled a.btn {
 .info_section .info_form .social_box a {
     margin-right: 25px;
 }
+
+
+/* end of info section */
 
 
 /* footer section*/
