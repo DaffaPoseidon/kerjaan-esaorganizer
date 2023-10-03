@@ -430,7 +430,7 @@ fieldset:disabled a.btn {
 }
 
 .do_section{
-    margin: 120px 0;
+    padding: 60px 0;
 }
 
 .do_section .heading_container {
@@ -534,7 +534,7 @@ fieldset:disabled a.btn {
 }
 
 .who_section{
-    margin-top: 120px;
+
 }
 
 .who_section .row {
@@ -566,13 +566,34 @@ fieldset:disabled a.btn {
     color: #353434;
 }
 
+/* Bagian halaman lain */
+.work_section{
+    padding: 60px 0 30px 0;
+}
+
 .work_section .work_container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    flex-direction: row;
     margin: 0 -1%;
+}
+
+.work_section .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.work_section .container .heading_container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.work_section .container .heading_container p{
+    text-align: left;
 }
 
 .work_section .work_container .box {
@@ -599,6 +620,8 @@ fieldset:disabled a.btn {
     width: 56.5%;
 }
 
+/* Bagian halaman lain berakhir */
+
 .client_section {
     margin-bottom: 150px;
 }
@@ -607,6 +630,7 @@ fieldset:disabled a.btn {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-bottom: 35px;
 }
 
 .client_section .box {
