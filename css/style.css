@@ -4,9 +4,9 @@ body {
     background-color: #ffffff;
 }
 
-.layout_padding {
+/* .layout_padding {
     padding: 75px 0;
-}
+} */
 
 .layout_padding2 {
     padding: 45px 0;
@@ -385,7 +385,7 @@ fieldset:disabled a.btn {
 
 .slider_section .detail-box {
     text-align: center;
-    margin-bottom: 110px;
+    margin: 120px 0;
 }
 
 .slider_section .detail-box h1 {
@@ -429,6 +429,10 @@ fieldset:disabled a.btn {
     opacity: 1;
 }
 
+.do_section{
+    margin: 120px 0;
+}
+
 .do_section .heading_container {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -446,7 +450,7 @@ fieldset:disabled a.btn {
     -ms-flex-pack: center;
     justify-content: center;
     padding-top: 10px;
-    gap: 50px;
+    gap: 25px;
 }
 
 .do_section .do_container .box {
@@ -529,6 +533,10 @@ fieldset:disabled a.btn {
     background-image: url(../images/arrow-end.png);
 }
 
+.who_section{
+    margin-top: 120px;
+}
+
 .who_section .row {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -541,10 +549,6 @@ fieldset:disabled a.btn {
 
 .who_section .detail-box {
     margin-left: 65px;
-}
-
-.who_section .detail-box p {
-    margin-top: 35px;
 }
 
 .who_section .detail-box a {
@@ -596,14 +600,13 @@ fieldset:disabled a.btn {
 }
 
 .client_section {
-    padding: 150px 0;
+    margin-bottom: 150px;
 }
 
 .client_section .heading_container {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 45px;
 }
 
 .client_section .box {
@@ -739,7 +742,8 @@ fieldset:disabled a.btn {
 .target_section h5 {
     font-size: 18px;
     font-weight: 500;
-    margin: 0 2em;
+    margin: 0;
+    margin: 0 20%;
 }
 
 
@@ -747,6 +751,56 @@ fieldset:disabled a.btn {
 
 
 /* start of cooperate section */
+.cooperation{
+    max-width: 100%;
+    width: 80%;
+    max-height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto; /* Menengahkan elemen horizontal */
+}
+.section-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membagi menjadi 3 kolom dengan lebar yang sama */
+    grid-gap: 10px; /* Jarak antar elemen */
+    text-align: center;
+    align-items: center;
+}
+
+.kolomSatu,
+.kolomDua {
+    width: 100%; /* Membuat lebar elemen 100% */
+    height: 100%; /* Membuat tinggi elemen 100% */
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.kolomSatu{
+    text-align: right;
+}
+
+.kolomDua{
+    text-align: left;
+}
+
+.kolomSatuA, .kolomSatuB, .kolomDuaA, .kolomDuaB{
+    display: flex;
+    gap: 15px;
+}
+
+.cooperation_image{
+    align-self: flex-start;
+}
+
+.cooperation_image img {
+    max-width: 100%;
+    height: auto; /* Memastikan gambar tetap proporsional */
+}
 
 .section-padding {
     padding: 80px 0px;

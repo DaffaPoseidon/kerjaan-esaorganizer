@@ -116,6 +116,28 @@
     .footer_section p {
         padding: 20px 30px;
     }
+    /* Blog Section */
+    .blog_section .blog_container .blog_bg {
+        display: none;
+    }
+    .cooperation_image{
+        display: none;
+    }
+    .cooperation .section-content{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .kolomSatuA, .kolomSatuB{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    .kolomDuaA, .kolomDuaB{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
 }
 
 @media (max-width: 576px) {
@@ -153,4 +175,6 @@
 
 /* Why choose us */
 
-@media(max-width: 360px) {}
+@media(max-width: 360px) {
+
+}
