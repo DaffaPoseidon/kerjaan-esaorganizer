@@ -27,6 +27,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/tooplate-style.css" rel="stylesheet" />
+    <link href="css/magnific-popup.min.css" rel="stylesheet">
 
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
@@ -58,22 +60,98 @@
                     <li>Dan lainnya ....</li>
                 </ul>
             </div>
-            <div class="work_container layout_padding2 ">
+
+            <!-- Gallery Section -->
+            <div class="tm-gallery-section tm-mb-80">
+                <ul class="filters-button-group tm-mb-40">
+                    <li><a href="#" data-filter=".city">City</a></li>
+                    <li><a href="#" data-filter=".nature">Nature</a></li>
+                    <li><a href="#" data-filter=".portraits">Portraits</a></li>
+                    <li><a href="#" class="active" data-filter="*">Show All</a></li>
+                </ul>
+                <div class="tm-gallery">				
+                    <div class="tm-gallery-item city portraits">
+                        <a href="images/Event Planner/Capacity Building/CapacityBuilding_1.JPG">
+                            <img src="images/Event Planner/Capacity Building/CapacityBuilding_1.JPG" alt="City Scape" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="tm-gallery-item portraits">
+                        <a href="img/img-02.jpg">
+                            <img src="img/tn-img-02.jpg" alt="Beautiful Lady" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="tm-gallery-item city">
+                        <a href="img/img-03.jpg">
+                            <img src="img/tn-img-03.jpg" alt="City over cloud" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="tm-gallery-item nature">
+                        <a href="img/img-04.jpg">
+                            <img src="img/tn-img-04.jpg" alt="Autumn Forest" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="tm-gallery-item city">
+                        <a href="img/img-05.jpg">
+                            <img src="img/tn-img-05.jpg" alt="Skyscrapers Reflected" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="tm-gallery-item city">
+                        <a href="img/img-06.jpg">
+                            <img src="img/tn-img-06.jpg" alt="City Night" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="tm-gallery-item nature portraits">
+                        <a href="img/img-07.jpg">
+                            <img src="img/tn-img-07.jpg" alt="Gallery item" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="tm-gallery-item nature">
+                        <a href="img/img-08.jpg">
+                            <img src="img/tn-img-08.jpg" alt="Gallery item" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="tm-gallery-item nature">
+                        <a href="img/img-09.jpg">
+                            <img src="img/tn-img-09.jpg" alt="Gallery item" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="tm-gallery-item nature portraits">
+                        <a href="img/img-10.jpg">
+                            <img src="img/tn-img-10.jpg" alt="Gallery item" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="tm-gallery-item nature">
+                        <a href="img/img-11.jpg">
+                            <img src="img/tn-img-11.jpg" alt="Gallery item" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="tm-gallery-item portraits">
+                        <a href="img/img-12.jpg">
+                            <img src="img/tn-img-12.jpg" alt="Gallery item" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>			
+            </div>
+
+            <!-- <div class="work_container layout_padding2 ">
                 <div class="box b-1 ">
-                    <img src="images/w-1.png " alt=" ">
+                    <img src="images/Event Planner/Capacity Building/CapacityBuilding_1.JPG" alt=" ">
                 </div>
                 <div class="box b-2 ">
-                    <img src="images/w-2.png " alt=" ">
+                    <img src="images/Event Planner/Capacity Building/CapacityBuilding_2.JPG" alt=" ">
 
                 </div>
                 <div class="box b-3 ">
-                    <img src="images/w-3.png " alt=" ">
+                    <img src="images/Event Planner/Capacity Building/CapacityBuilding_3.JPG" alt=" ">
 
                 </div>
                 <div class="box b-4 ">
-                    <img src="images/w-4.png " alt=" ">
+                    <img src="images/Event Planner/Capacity Building/CapacityBuilding_4.JPG" alt=" ">
                 </div>
-            </div>
+                <div class="box b-4 ">
+                    <img src="images/Event Planner/Capacity Building/CapacityBuilding_5.JPG" alt=" ">
+                </div>
+            </div> -->
         </div>
     </section>
     <!-- end work section -->
@@ -176,6 +254,44 @@
 
     <!-- Core theme JS-->
     <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+
+    <!-- gallery -->
+    <script src="js/gallery/jquery.min.js"></script>
+	<script src="js/gallery/imagesloaded.pkgd.min.js"></script>
+	<script src="js/gallery/isotope.pkgd.min.js"></script>
+	<script src="js/gallery/jquery.magnific-popup.min.js"></script>
+
+    <script>
+                // gallery
+
+                $(function(){
+		  	// Init the image gallery
+		  	var $gallery = $(".tm-gallery").isotope({
+		    	itemSelector: ".tm-gallery-item",
+		    	layoutMode: "fitRows"
+		  	});
+		  
+		  	// Layout Isotope after each image loads
+		  	$gallery.imagesLoaded().progress(function() {
+		    	$gallery.isotope("layout");
+		  	});
+
+		  	$(".filters-button-group").on("click", "a", function(e) {
+		  		e.preventDefault();
+			    var filterValue = $(this).attr("data-filter");
+			    $gallery.isotope({ filter: filterValue });
+			    $('.filters-button-group a').removeClass('active');
+			    $(this).addClass('active');
+			});
+
+		  	// Magnific Pop up
+		  	$('.tm-gallery').magnificPopup({
+		  		delegate: 'a',
+			  	type: 'image',
+				  gallery: { enabled: true }
+			});
+		});
+    </script>
 
     <script src="js/landingPage.js "></script>
 </body>
