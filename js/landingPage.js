@@ -62,9 +62,3 @@ function scrollToElement(className) {
         element.scrollIntoView({ behavior: 'smooth' });
     }
 }
-
-// lightbox gallery
-$(document).on("click", '[data-toggle="lightbox"]', function (event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-});
